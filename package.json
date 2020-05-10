@@ -8,6 +8,7 @@
     "start": "tsc-watch --onSuccess \" node dist/index.js\" "
   },
   "dependencies": {
+    "crypto-js": "^4.0.0",
     "typescript": "^3.8.3"
   },
   "devDependencies": {
