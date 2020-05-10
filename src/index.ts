@@ -4,11 +4,24 @@ const name = 'jgam',
   age = 24,
   gender = 'male';
 
-interface Human {
-  name: string;
-  age: number;
-  gender: string;
+// interface Human {
+//   name: string;
+//   age: number;
+//   gender: string;
+// }
+
+class Human {
+  public name: string;
+  public age: number;
+  public gender: string;
+  constructor(name: string, age: number, gender: string) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+  }
 }
+
+const jgam = new Human('jgam', 18, 'male');
 
 const person = {
   name: 'jimmy',
@@ -24,7 +37,7 @@ const sayHi = (person: Human): void => {
 };
 
 //ts wouldn't let me compile if there are not enough number of arguments
-sayHi(person);
+sayHi(jgam);
 
 //this is typescript thing
 export {};
